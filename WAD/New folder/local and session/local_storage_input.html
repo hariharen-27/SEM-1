@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        body{ 
+            text-align: left;  
+            font-size: 20px;  
+            margin-left: 100px;
+            margin-top: 30px; 
+        }  
+    </style>
+</head>
+<body>
+    <form action="local_storage_output.html">
+        Apple <input type="number" name="apple" id="akg" placeholder="kg">&nbsp;
+        Rate  <input type="number" name="apple" id="arate" placeholder="rs"><br><br>
+        Orange<input type="number" name="orange" id="okg" placeholder="kg">&nbsp;
+        Rate  <input type="number" name="apple" id="orate" placeholder="rs"><br><br>
+        <button onclick="storeData()">Sumbit</button>
+    </form>
+    <script>
+        function storeData(){
+            if(typeof(Storage)!="undefined"){
+                let appleWeight=document.getElementById("akg").value
+                let appleRate=document.getElementById("arate").value
+                let orangeWeight=document.getElementById("okg").value
+                let orangeRate=document.getElementById("orate").value
+                localStorage.setItem("Apple_KG",appleWeight)  
+                localStorage.setItem("Apple_rate",appleRate) 
+                localStorage.setItem("Orange_KG",orangeWeight);  
+                localStorage.setItem("Orange_rate",orangeRate);
+            } else{
+                alert("Sorry! your browser is not supporting") 
+            }
+        }
+    </script>
+</body>
+</html>

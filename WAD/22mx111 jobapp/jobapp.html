@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title> Job Application Form</title>
+        <link rel="stylesheet" href="jobapp.css">
+
+    </head>
+    <body class="colors" onpageshow="myFunction()">
+        <script>
+            function myFunction(){
+                alert("Welcome to job application webpage");
+            }
+        </script>
+        <form class="form-design" oninvalid="alert('You must fill out the form');" >
+        <div class="form-body">
+
+            <div class="form-header">
+                <h1>Job Application</h1>
+            </div>
+            <div class="personalsection">
+                <h2>Personal Details</h2>
+                <hr><br>
+                <div class="horizontal-group">
+                    <div class="form-group left">
+                        <label for="firstname" class="label-title">First Name *</label><br>
+                        <input type="text" id="firstname" class="form-input"placeholder="enter your first name" required />
+                        <label for="dob" class="label-title">Date Of Birth *</label>
+                        <input type="date" id="dob"  class="form-input" placeholder="enter the date of birth" required>
+                        <label class="label-title">Gender:</label>
+                        <div class="input-group" class="pad">
+                          <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+                          <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+                        </div>
+                        <div>
+                            <label for="address" class="label-title"> Address *</label>
+                            <textarea class="form-input" rows="4" cols="60" style="height:auto" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group right">
+                        <label for="lastname" class="label-title">Last Name</label>
+                        <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+                        <div class="contact section">
+                        <div class="form-group">
+                            <label for="email" class="label-title">Email*</label>
+                            <input type="email" id="email" class="form-input" placeholder="enter your email" required>
+                          </div>
+                        <label for="phno" class="label-title">Phone Number *</label>
+                        <input type="text" id="phno" class="form-input" placeholder="enter your mobile number" required><br><br>
+                        <label for="nation" class="label-title">Nationality</label>
+                        <input type="text" id="nation" class="form-input" placeholder="enter your nationality" >
+                        <br><br>
+                        </div>
+                    </div>
+                </div>
+                <!--adress-->
+                
+            </div>
+            
+            
+            <div class="qualification">
+               
+                <div class="horizontal-group">
+                    <h2>Qualification</h2>
+                    <hr><br>
+                    <div class="form-group left">
+                        <lable for="collegename" class="label-title">College Name *</lable>
+                        <input type="text" id="collegename" class="form-input" placeholder="enter your college name" required />
+                        <label for="percentage" class="label-title">Percentage/CGPA *</label>
+                        <input type="text" id="percentage" class="form-input" placeholder="enter your percentage/CGPA" required />
+
+
+                    </div>
+                    <div class="form-group right">
+                        <label class="label-title">Work Experience *</label><br>
+                        <label for="fresher"><input type="radio" name="experience" value="fresher" id="fersher" > Fresher </label>
+                        <label for="years"><input type="radio" name="experience" value="years" id="years" >  0 - 2 Years </label><br><br>
+                        <label for="expectation" class="label-title">Salary Expectation</label>
+                        <input type="range" min="20" max="100" step="5" value="0" id="expectation" class="form-input" onchange="change();" style="height:28px;width:78%;padding:0%;">
+                        <span id="range-label">20k</span><br><br>
+                        <label for="choose-file" class="label-title">Upload your Resume</label>
+                        <input type="file" id="choose-file" size="90">
+
+            
+
+                    </div>
+                    
+                        <div >
+                            <label class="label-title">Roles Interested</label><br>
+                            <label><input type="checkbox" value="Web">Java Developer</label>
+                            <label><input type="checkbox" value="iOS">Web Developer</label>
+                            <label><input type="checkbox" value="Andriod">Data Analyst</label>
+                            <label><input type="checkbox" value="Game">Full Stack Developer</label>
+                          </div>
+                </div>
+                <br><br>
+                <div>
+                    <center>
+                 <!--input type="button" onclick="show_alert()" value="Submit form" class="sub"-->
+                 <button type="submit"  onclick="alert ('application successfully submitted')">Submit</button>
+                </center>
+                 </div>
+            
+            
+       
+                
+            </div>
+
+
+        </div>
+            
+
+                
+        </form>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+form{
+    
+    padding-bottom: 50px;
+    background-color: rgb(206, 241, 177);
+    width: 35%;
+    padding-top: 10px;
+    margin: auto;
+    line-height: 2;
+    padding-right: 20px;
+
+   
+}
+body{
+    background-color: aqua;
+}
+body.h2{
+    text-align: center;
+    display: flex;
+    padding-left: 66px;
+    justify-content: center;
+
+}
+.centers{
+    text-align: center;
+}
+.contents{
+    
+    
+    padding-left: 10%;
+    
+}
+button{
+    margin-left: 150px;
+}

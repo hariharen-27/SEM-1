@@ -1,0 +1,14 @@
+form{
+    width:30%;
+    margin:auto;
+    background-color: rgb(206, 241, 177);
+    line-height: 2;
+}
+body{
+    background-color: aqua;
+}
+body.h2{
+    text-align: center;
+    display: flex;
+    padding-left: 5px;
+}

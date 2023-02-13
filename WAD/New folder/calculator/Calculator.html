@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pay Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <p id="countSubmit"></p>
+    <p id="date"></p>
+    <div id="empForm">
+        <form onsubmit="calculateFunction()">
+            <p>Pay Calculator</p>
+            <br>
+            <table>
+                <tr>
+                    <td><label for="ename">Employee Name <sup>*</sup></label></td>
+                    <td><input type="text" name="ename" id="name" required onblur="empNameFunction()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="empId">Employee ID <sup>*</sup></label></td>
+                    <td><input type="text" name="empId" id="empId" required onblur="empIdFunction()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="dateBirth">Date of Birth <sup>*</sup></label></td>
+                    <td><input type="date" name="dateBirth" id="dateBirth" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="dateJoin">Date of Joining <sup>*</sup></label></td>
+                    <td><input type="date" name="dateJoin" id="dateJoin" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="basicPay">Basic Pay <sup>*</sup></label></td>
+                    <td><input type="number" name="basicPay" id="basicPay" required onblur="basicPayFunction()" step=".01" min="10000" max="200000"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="hra">HRA </label></td>
+                    <td><input type="text" name="hra" id="hra" disabled></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="deductions">Deductions </label></td>
+                    <td><input type="text" name="deductions" id="deductions" disabled></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Calculate">
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+    <footer>&#169; Santhosh R, 22MX221. Submission Date : 12-11-2022</footer>
+</body>
+</html>

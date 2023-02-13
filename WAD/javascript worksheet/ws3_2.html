@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let rem,temp,count,odd=0,even=0,sum=0,max=0,min=0;
+            num=prompt("entert a number");
+            Number(num);
+            temp=num;
+            count=num.length;
+            alert(`${count} is the length of number`);
+            while(num){
+                rem=num%10;
+                if(rem%2===0){
+                    even+=1;
+                }
+                else{
+                    odd+=1;
+                }
+                if(rem>max){
+                    max=rem
+
+                }
+                else if (rem<min){
+                    min=rem
+                }
+                sum=sum + rem;
+                num=Math.floor(num/10);
+            }
+            console.log(sum);
+            console.log(odd);
+            console.log(even);
+            console.log(min);
+            console.log(max);
+
+        </script>
+    </body>
+</html>
